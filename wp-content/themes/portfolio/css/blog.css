@@ -1,0 +1,153 @@
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* main{
+    margin-top: 150px;
+} */
+
+.blogimg {
+    width: 30%;
+    margin-right: 20px;
+
+}
+
+.blogtext {
+    width: 70%;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 844px) {
+
+    .blogtext {
+        height: 120px;
+        padding-top: 0px;
+    }
+
+}
+
+
+
+
+
+
+article {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+}
+
+main {
+    margin-top: 40px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    /* text-align: center; */
+    padding: 1em;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+article {
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    /* margin: 19.92px 0; */
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    /* margin: 16px 0; */
+    /* margin-top: 25px; */
+}
+
+a {
+    color: #007BFF;
+    /* text-decoration: none; */
+}
+
+.blogtext a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+}
+
+.pagination {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.pagination .page-numbers {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 15px 20px;
+    color: #333;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px #999;
+    background: #fff;
+    font-size: 20px;
+}
+
+.pagination .current {
+    padding: 15px 20px;
+    background: #69a4db;
+    color: #fff;
+}
+
+.pagination .prev,
+.pagination .next {
+    background: transparent;
+    box-shadow: none;
+    color: #69a4db;
+}
+
+.pagination .dots {
+    background: transparent;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 844px) {
+
+    section{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}

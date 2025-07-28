@@ -1,0 +1,258 @@
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.copyright {
+  text-align: right;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.novel_list_h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.novel_list_article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+article {
+  width: 300px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+.novel_list_h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.novel_list_p {
+  line-height: 1.4;
+}
+
+.novel_list_text {
+  color: #555;
+  font-size: 16px;
+}
+
+.novel_list_post {
+  margin: 16px 0;
+  font-size: 16px;
+  /* color: #000; */
+  color: #555;
+}
+
+.novel_list_a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.novel_list_a:hover {
+  text-decoration: underline;
+}
+
+/* ページ中央に設置 */
+.pagination {
+  text-align: center;
+}
+
+.pagination {
+  /* position: fixed; */
+  bottom: 190px; /* 下部からの距離を調整 */
+  left: 50%; /* 画面中央に配置する場合（オプション） */
+  /* transform: translateX(-50%); 画面中央に配置する場合（オプション） */
+  margin: 90px 0;
+}
+
+/* 現在開いている以外のページのボタン */
+.pagination .page-numbers {
+  display: inline-block;
+  margin-right: 25px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #7090dd;
+  border: 1px solid #7090dd;
+  background: #fff;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* マウスが乗った時の、ボタンの背景の色と文字の色 */
+.pagination a.page-numbers:hover {
+  color: #fff;
+  background-color: #999;
+  border-color: #999;
+}
+
+/* 現在のページのボタン */
+.pagination .current {
+  padding: 0;
+  background: #7090dd;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* 前へ、次へ */
+.pagination .prev,
+.pagination .next {
+  border: 1px solid #004bb1;
+  color: #004bb1;
+  position: relative;
+  font-size: 12px;
+}
+
+.pagination a.next.page-numbers {
+  margin-right: 0;
+}
+
+/*  縦線の共通CSS　*/
+.pagination .next::before,
+.pagination .prev::after {
+  content: "";
+  display: inline-block;
+  width: 0.5px;
+  height: 40px;
+  background-color: rgb(224, 215, 215);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pagination .next::before {
+  left: -15px;
+}
+
+.pagination .prev::after {
+  right: -15px;
+}
+
+/* 数字の間のドット */
+.pagination .dots {
+  background: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 844px) {
+
+  .novel_list_post {
+    font-size: 1.1em;
+  }
+
+  .novel_list_text {
+    font-size: 1.6em;
+  }
+
+  .novel_list_h2 {
+    font-size: 2.0em;
+  }
+
+  article {
+    width: 165px;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+
+  .pagination {
+    position: static;
+    transform: translateX(0%);
+    margin-bottom: 20%;
+  }
+
+  .novel_list_article {
+    margin: 50px 10px 90px 10px;
+  }
+
+  .novel_img {
+    /* max-width: 150px; */
+    margin: 0 auto;
+  }
+}
+
+/* カスタムCSS */
+
+.lcp_catlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  margin-bottom: 150px;
+}
+
+.lcp_catlist li {
+  width: 300px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.lcp_catlist li:hover {
+  transform: translateY(-5px);
+}
+
+.lcp_thumbnail {
+  max-width: 100%;
+  /* object-fit: cover; */
+  /* object-position: left bottom; */
+  /* margin: 10px 0px; */
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+.lcp_catlist li a {
+  color: #007bff;
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.lcp_catlist li a:hover {
+  text-decoration: underline;
+}
+
+.lcp_excerpt {
+  color: #555;
+  line-height: 1.4;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

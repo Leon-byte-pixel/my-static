@@ -1,0 +1,377 @@
+.ad {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+header {
+  position: static;
+}
+
+.openbtn {
+  /* position: relative; */
+
+  position: absolute;
+
+  right: 10px;
+
+  top: 20px;
+}
+
+.header-novel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.anime-kannsou-title {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.anime-preface {
+  font-size: 20px;
+  display: block;
+  line-height: 30px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.anime-caution {
+  font-size: 16px;
+  display: block;
+  line-height: 25px;
+  margin: 20px;
+  color: #1666c6;
+  text-align: center;
+}
+
+.anime-caution p {
+  text-indent: 0;
+}
+
+.uagb-toc__list-wrap ol li a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page-link-anime {
+  display: flex;
+  margin: 30px 0px;
+  justify-content: space-between;
+  padding: 0 50px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 844px) {
+  .page-link-anime {
+    font-size: 16px;
+    padding: 0 0px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: 20%;
+}
+
+.anime-img img {
+  padding: 20px 30px 0px 30px;
+}
+
+.wp-block-image img {
+  padding: 40px 30px 10px 30px;
+}
+
+.anime-title {
+  background-color: rgb(26, 171, 190);
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  border-radius: 8px;
+}
+
+.wp-block-embed {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.wp-block-embed figcaption {
+  font-size: 18px;
+}
+
+.anime-title h1 {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.anime_title_h1 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.anime_title_h2 {
+  font-size: 35px;
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+}
+
+.anime-midashi {
+  font-size: 30px;
+  display: block;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.uagb-toc__wrap {
+  margin: 30px 0 30px 0;
+}
+
+.midashi_anchor {
+  font-size: 20px;
+  margin-left: 38px;
+  font-weight: bold;
+}
+
+/* 見出しに左側面の縦線を追加 */
+.midashi_anchor {
+  position: relative;
+  padding-left: 20px; /* 縦線の左側の余白 */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.midashi_anchor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 10px; /* 縦線の幅 */
+  background-color: #3498db; /* 縦線の色 */
+}
+
+blockquote.wp-block-quote.has-text-align-center {
+  /* background-color: rgb(26, 171, 190); */
+  background-color: #8ed1fc;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  border-radius: 8px;
+}
+
+cite {
+  font-size: 22px;
+  display: flex;
+  justify-content: right;
+  padding-right: 100px;
+}
+
+.wp-block-heading {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 35px !important; /* 縦線の左側の余白 */
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  margin: 60px 0px 40px 48px;
+}
+
+.wp-block-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 10px; /* 縦線の幅 */
+  background-color: #b0e0e6; /* 縦線の色 */
+}
+
+.anime_main_text {
+  font-size: 16px;
+  display: block;
+  line-height: 25px;
+  /* white-space: pre-line; */
+}
+
+p {
+  /* text-indent: 2rem;
+  line-height: 20px;
+  font-size: 21px;
+  padding-left: 40px;
+  margin-bottom: 25px; */
+
+  text-indent: 2rem;
+  font-size: 17px;
+  color: #333333;
+  line-height: 25px;
+  padding-left: 88px;
+  padding-right: 88px;
+  font-family: monospace, monospace;
+  margin-bottom: 25px;
+}
+
+.wp-block-preformatted {
+  text-indent: 2rem;
+  font-size: 17px;
+
+  color: #333333;
+  line-height: 25px;
+  padding-left: 88px;
+  padding-right: 88px;
+}
+
+.anime-br {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 950px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#container {
+  margin-top: 0px;
+}
+
+#posts-container {
+  margin-top: 20px;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  padding-top: 40px;
+  margin: 30px 0px;
+}
+
+.uagb-toc__title {
+  font-size: 30px !important;
+}
+
+.uagb-toc__list {
+  font-size: 20px;
+}
+
+.has-text-color {
+  margin-top: 70px;
+}
+
+ol, ul {
+  box-sizing: border-box;
+  font-size: 17px;
+  margin: 20px;
+  padding: 0 88px;
+  color: #333333;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+ol.uagb-toc__list li {
+  margin-left: 25px !important;
+}
+
+.wp-block-list li {
+  list-style: decimal;
+}
+
+
+
+@media screen and (max-width: 844px) {
+
+  ol,ul {
+    padding: 0px;
+  }
+
+  .uagb-toc__list {
+    font-size: 19px;
+  }
+
+  .uagb-toc__list-wrap ol li a {
+    font-size: 17px;
+  }
+
+  .uagb-toc__title {
+    font-size: 25px !important;
+  }
+
+  .anime-midashi {
+    font-size: 23px;
+  }
+
+  .anime_title_h2 {
+    font-size: 24px;
+  }
+
+  p {
+    /* padding-left: 5px; */
+
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+  }
+
+  .midashi_anchor {
+    margin-left: 21px;
+  }
+
+  .wp-block-heading {
+    margin-left: 10px;
+  }
+
+  .paragraph {
+    padding-left: 10px;
+  }
+
+  .wp-block-preformatted {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+  }
+
+  #container {
+    margin-top: 0px;
+  }
+
+  #g-nav ul {
+    top: 50%;
+    /* left: 43%; */
+  }
+
+  .anime-preface {
+    text-align: initial;
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .anime-caution {
+    text-align: initial;
+  }
+
+  .anime-br {
+    display: inline;
+  }
+
+  .post {
+    padding-top: 40px;
+  }
+}
